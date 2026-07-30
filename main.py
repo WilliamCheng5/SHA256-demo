@@ -7,6 +7,6 @@ T_COUNT = 500 # number of transactions
 transactions = []
 for i in range(T_COUNT):
     transactions.append(transaction_generator.generate_transaction())
-# print(transactions[:10])
 
+# hash all transactions
 sha256.sha256(transactions[0])
